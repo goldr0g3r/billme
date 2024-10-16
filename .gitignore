@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+ENV/
+VENV/
+*.egg
+*.egg-info
+dist/
+build/
+*.log
+
+# React
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+build/
