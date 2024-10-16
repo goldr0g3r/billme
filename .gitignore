@@ -15,6 +15,9 @@ dist/
 build/
 *.log
 
+# Django
+*.sqlite3
+
 # React
 node_modules/
 npm-debug.log
