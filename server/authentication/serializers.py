@@ -13,7 +13,7 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
         token["email"] = user.email
         token["first_name"] = user.first_name
         token["last_name"] = user.last_name
-        token["issuer"] = "https://www.example.com"
+        token["role"] = user.role
         return token
 
 
@@ -26,7 +26,14 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ("email", "password", "confirm_password", "first_name", "last_name")
+        fields = (
+            "email",
+            "password",
+            "confirm_password",
+            "first_name",
+            "last_name",
+            "role",
+        )
 
         extra_kwargs = {
             "first_name": {"required": True},
