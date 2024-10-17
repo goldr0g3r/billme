@@ -18,11 +18,7 @@ class CustomUserAdmin(UserAdmin):
         "date_joined",
         "date_updated",
     )
-    list_filter = (
-        "email",
-        "is_staff",
-        "is_active",
-    )
+    list_filter = ("is_staff", "is_active", "role")
     fieldsets = (
         (
             None,
